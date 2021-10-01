@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0" />
+    <title>WEBMC Website - Western Engineering Biomedical Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/WEBMC.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Events</h1>
+        <p>Check out past and upcoming WE BMC events!</p>
+      </div>
+    </section>
+
+    <!------events------->
+
+    <section class="events">
+      <h1>Upcoming Events</h1>
+      <p>Event dates will be posted as they are decided.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Annual General Meeting</h3>
+          <p>
+            Join us for our first meeting of the year where we will discuss
+            plans for the 2021-22 school year!
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Industry Spotlight</h3>
+          <p>
+            The Annual Industry Spotlight will likely be held in November 2021.
+            Stay tuned for more information!
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Dual Degree Info Session</h3>
+          <p>
+            Come to this info session to learn more about the Dual Degree
+            program and hear about the experiences of Dual Degree students.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------past events------->
+
+    <section class="past-events">
+      <h1>Past Events</h1>
+      <p>
+        Here are some of our most popular events held both in-person and
+        virtually.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Industry Spotlight</h3>
+          <p>
+            WE BMC and Engineering Career Services collaborated to host the
+            first Biomedical Engineering Industry Spotlight event! Undergraduate
+            students who attended learned of the latest industry trends,
+            different biomedical engineering businesses, and networked with
+            industry professionals. The event consisted of pitches from industry
+            experts to discuss their roles, and companies they work for. The
+            event concluded with open networking where students had an
+            opportunity to ask more questions and discuss potential employment
+            opportunities.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Graduate Panel</h3>
+          <p>
+            A panel made up of eight graduate students presented their path to
+            graduate school and information on current and past research. This
+            event gave students the opportunity to learn more about graduate and
+            research possibilites in biomedical engineering. Students were able
+            to network with the graduate students after presentations were
+            complete.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Trudell Medical Tour</h3>
+          <p>
+            WE BMC toured Trudell Medical, an industry leader in designing and
+            manufacturing the highest quality aerosol drug delivery and lung
+            health devices for the management of respiratory conditions, located
+            in London, ON. The tour was approximately an hour long and included
+            an info presentation and in-depth tour of their manufacturing
+            facilities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---------JavaScript for Toggle Menu-------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-----------Footer---------->
+
+    <section class="footer">
+      <h4>Western Engineering Biomedical Club</h4>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0" />
+    <title>WEBMC Website - Western Engineering Biomedical Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/WEBMC.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Contact Us</h1>
+        <p>
+          Follow us on social media for all club updates and biomedical
+          engineering news!
+        </p>
+      </div>
+    </section>
+
+    <section class="social-media">
+      <div class="wrapper">
+        <div class="icon facebook">
+          <a href="https://www.facebook.com/WEBioMedClub/" target="_blank">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </a>
+        </div>
+
+        <div class="icon instagram">
+          <a
+            href="https://www.instagram.com/westernengbiomedclub/?hl=en"
+            target="_blank"
+          >
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+          </a>
+        </div>
+
+        <div class="icon linkedin">
+          <a
+            href="https://www.linkedin.com/company/western-engineering-biomedical-club/mycompany/"
+            target="_blank"
+          >
+            <div class="tooltip">LinkedIn</div>
+            <span><i class="fab fa-linkedin"></i></span>
+          </a>
+        </div>
+
+        <div class="icon email">
+          <a href="mailto:webmc.pres@gmail.com">
+            <div class="tooltip">Email</div>
+            <span><i class="far fa-envelope"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <h1 class="heading">Our Executive Team</h1>
+
+      <div class="profiles">
+        <div class="profile">
+          <img src="images/daya.jpg" />
+
+          <h3 class="user-name">Daya Gill</h3>
+          <p>President</p>
+        </div>
+      </div>
+      <div class="profiles">
+        <div class="profile">
+          <img src="images/Hannah Hammond_ VP External.jpg" />
+
+          <h3 class="user-name">Hannah Hammond</h3>
+          <p>VP External</p>
+        </div>
+      </div>
+      <div class="profiles">
+        <div class="profile">
+          <img src="images/emily2.jpg" />
+          <h3 class="user-name">Emily Bangsboll</h3>
+          <p>VP Internal</p>
+        </div>
+      </div>
+      <div class="profiles">
+        <div class="profile">
+          <img src="images/suvi4.jpg" />
+
+          <h3 class="user-name">Suvi Candra</h3>
+          <p>VP Communications</p>
+        </div>
+      </div>
+      <div class="profiles">
+        <div class="profile">
+          <img src="images/sophie.png" />
+
+          <h3 class="user-name">Sophie Kedwell</h3>
+          <p>VP Finance</p>
+        </div>
+      </div>
+    </div>
+
+    <!----commented out - maybe add later
+
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Richmond Street....</h5>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Richmond Street....</h5>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Richmond Street....</h5>
+            </span>
+          </div>
+          <div class="contact-col">
+            <form action="form-handler.php" method="post">
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Enter your subject"
+                required
+              />
+              <textarea
+                rows="8"
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    ----->
+
+    <!---------JavaScript for Toggle Menu-------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-----------Footer---------->
+
+    <section class="footer">
+      <h4>Western Engineering Biomedical Club</h4>
+    </section>
+  </body>
+</html>

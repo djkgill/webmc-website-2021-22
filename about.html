@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with-device-width, initial-scale=1.0" />
+    <title>WEBMC Website - Western Engineering Biomedical Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/WEBMC.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>About Us</h1>
+        <p>Learn about WE BMC's purpose as a Western Engineering club!</p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScSHlhBAiphqCsboyYbE7ySbVwNZ0Qu_yrsL9zXtHaMQsHtzA/viewform?usp=sf_link"
+          class="hero-btn"
+          >Sign up here!</a
+        >
+      </div>
+    </section>
+
+    <!--Facilities-->
+    <section class="facilities">
+      <div class="row">
+        <div class="facilities-col">
+          <h3>About Us</h3>
+          <p>
+            WE BMC (Western Engineering Biomedical Club) is a student-run club
+            whose mandate is to promote biomedical engineering at the
+            undergraduate level. Recently founded in 2018 by four undergraduate
+            students with a shared passion for biomedical engineering. WE BMC is
+            growing in members every year!
+          </p>
+        </div>
+        <div class="facilities-col">
+          <h3>Our Purpose</h3>
+          <p>
+            The purpose of WE BMC is to create awareness of the opportunities in
+            biomedical engineering and to complement the new biomedical
+            concurrent degree at Western that was introduced in September 2019.
+            Western has a very strong master's program and world-renowned
+            researchers in biomedical engineering. It is now time to bring this
+            to the undergraduate level!
+          </p>
+        </div>
+        <div class="facilities-col">
+          <h3>What We Do</h3>
+          <p>
+            We collaborate with graduate students, professors and industry
+            leaders to show undergraduate students various possibilities within
+            biomedical engineering.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------- about -------->
+
+    <section class="about-us">
+      <div class="about-col">
+        <img src="images/company event.png" />
+      </div>
+    </section>
+
+    <!---------JavaScript for Toggle Menu-------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-----------Footer---------->
+
+    <section class="footer">
+      <h4>Western Engineering Biomedical Club</h4>
+    </section>
+  </body>
+</html>
